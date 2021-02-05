@@ -18,7 +18,7 @@ public class Utility {
                 .build();
 
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://raw.githubusercontent.com/ENGETO-Java-Akademie/java2_lekce_04_projekt/main/B2BTUR01_07_2019.csv"))
+                .uri(URI.create("https://raw.githubusercontent.com/smekja/Meteorological_Data_Project/main/B2BTUR01_07_2019.csv"))
                 .GET()
                 .build();
 
