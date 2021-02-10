@@ -17,10 +17,9 @@ public class Statistic extends DailyRecords{
     }
     public void displayAvgTemp() {
         Stream<Day> stream = dailyRecords.stream();
-        Optional<Float> combinedValue = stream.map(Day::getAvgTemp)
-                .reduce(Float::sum);
-        float result = combinedValue.get() / dailyRecords.size();
-        result = (float) (Math.round(result * 10) /10.0);
+        Double result = stream.map(Day::getAvgTemp)
+                .collect(Collectors.averagingDouble(num -> num.doubleValue()));
+        result = Math.round(result * 10) / 10.0;
         System.out.println("Average temperature for the reporting period: " + result + " °C");
     }
     public void displayMaxTemp() {
