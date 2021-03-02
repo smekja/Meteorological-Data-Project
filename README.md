@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="https://engeto.cz/wp-content/uploads/2019/01/engeto-square.png" width="200" height="200">
-</p>
-
-# Java 2 - 4. lekce - Projekt
-
 ## Projekt
 ### Zadání
 
